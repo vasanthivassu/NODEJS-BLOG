@@ -1,0 +1,17 @@
+html
+  head
+    title= title
+script.
+var action = window.location.href;
+document.getElementById('delete').action =  action ;
+  body
+   div 
+   h2= message
+   form( id="delete", method = "POST")
+         div
+            label(for = "ID") Id:
+            input.form-control(name='id', value=id)
+         br   
+    
+         button(type = "submit") Post
+  

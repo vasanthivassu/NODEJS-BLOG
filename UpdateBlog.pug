@@ -1,0 +1,25 @@
+html
+  head
+    title= title
+script.
+var action = window.location.href;
+document.getElementById('update').action =  action ;
+  body
+   div 
+   h2= message
+   form( id="update", method = "POST")
+         div
+            label(for = "ID") Id:
+            input.form-control(name='id', value=id)
+         br   
+         div
+            label(for = "title") Title:
+            input(name = "title" value = "")
+         br
+         div
+            label(for = "blogContent") Content:
+            textarea(name = "blogContent" value = "")
+         br
+     
+         button(type = "submit") Post
+  
